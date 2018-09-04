@@ -119,7 +119,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <img src="dist/img/admin.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Administrator</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -127,12 +127,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-laptop"></i> <span>Tickets</span>
             <span class="pull-right-container">
@@ -140,10 +140,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Issued Tickets</a></li>
+            <li class="active"><a href="#"><i class="fa fa-circle-o"></i> Issued Tickets</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Resolved Tickets</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> List of All Tickets</a></li>
           </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-bar-chart"></i> <span>Reports</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-cog"></i> <span>Settings</span>
+          </a>
         </li>
       </ul>
     </section>
@@ -173,13 +183,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="small-box bg-aqua">
             <div class="inner">
               <h3>150</h3>
-
-              <p>New Orders</p>
+              <p>Issued Tickets</p>
             </div>
             <div class="icon">
-              <i class="ion ion-bag"></i>
+              <i class="ion ion-ios-compose"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -187,14 +195,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-              <p>Bounce Rate</p>
+              <h3>53</h3>
+              <p>Pending Tickets</p>
             </div>
             <div class="icon">
-              <i class="ion ion-stats-bars"></i>
+              <i class="ion ion-wrench"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -203,13 +209,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="small-box bg-yellow">
             <div class="inner">
               <h3>44</h3>
-
-              <p>User Registrations</p>
+              <p>Resolved Tickets</p>
             </div>
             <div class="icon">
-              <i class="ion ion-person-add"></i>
+              <i class="ion ion-checkmark-circled"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -218,13 +222,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="small-box bg-red">
             <div class="inner">
               <h3>65</h3>
-
-              <p>Unique Visitors</p>
+              <p>Total Tickets</p>
             </div>
             <div class="icon">
-              <i class="ion ion-pie-graph"></i>
+              <i class="ion ion-ios-list"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
